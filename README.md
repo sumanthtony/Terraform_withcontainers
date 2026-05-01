@@ -91,3 +91,16 @@ terraform init
 terraform plan -out terraform.out
 
 terraform apply "terraform.out"
+
+ Go to deploy folder and paste this command
+python3 update-ecs.py --cluster=production-cluster --service=production-service
+
+Validate the ECS service and there should be 0 Tasks pending in the dashboard
+
+Go to cloudwatch/VPC and check the data and logs stream
+
+Go to EC2-> Loadbanacer -> Copy the DNS name -> Hit the below url in the browser
+<DNS_NAME>/ping/
+Step17 - Hit the command and delete the architecture, ONCE EVERYTHING IS WORKING FINE TO AVOID BILL
+
+terraform destroy
