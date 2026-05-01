@@ -1,5 +1,7 @@
 PREREQUISIITE -  Create a repo in aws ECR with name - > django-app 
 
+<img width="870" height="464" alt="image" src="https://github.com/user-attachments/assets/535bbc30-b7cb-4504-a326-2b8aafd132c4" />
+
 IMPORTANT - Once the repo is create change the 600735812827.dkr.ecr.us-west-1.amazonaws.com IN COMMANDS TO THE REPO OF YOURS
 
 1) Change the docker_image_url_django in VARIABLES.TF file with <YOUR ECR REPO URL>
